@@ -14,7 +14,7 @@ class WebFrame(wx.Frame):
         super().__init__(parent, title=title)
 
         self._browser = html2.WebView.New(self)
-        self._browser.LoadURL("https://www.google.com")  # home page
+        self._browser.LoadURL("http://localhost/")  # home page
 
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self._browser, 1, wx.EXPAND)

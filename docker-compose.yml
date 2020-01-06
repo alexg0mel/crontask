@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  front:
+    build:
+      context: ./front
+      dockerfile: ./compose/local/Dockerfile
+    env_file:
+      - ./.envs/.local
+    volumes:
+      - ./front/src:/app/src
+      - ./front/public:/app/public
+    ports:
+      - "80:8080"
+    command: npm run serve

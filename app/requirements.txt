@@ -1,0 +1,12 @@
+# wxpython see https://wxpython.org
+fastapi
+aiofiles
+uvicorn # python3.7-dev
+async-cron
+
+
+# dev
+pytest
+pytest-cov
+requests
+
